@@ -134,9 +134,48 @@ Project documentation is essential for getting others to understand why and how 
 [More resources.](https://nvie.com/posts/a-successful-git-branching-model/)
 
 ### Part 2 – Software Engineering Practices: Learn to test your code and log best practices.
-#### f. Testing
-#### g. Logging
-#### h. Code reviews
+#### f. Testing.
+* Testing your code is essential before deployment. It helps you catch errors and faulty conclusions before they make any major impact.
+##### Testing And Data Science
+ 
+ * **UNIT TEST:** a type of test that covers a “unit” of code, usually a single function, independently from the rest of the program.
+  - The advantage of unit tests is that they are isolated from the rest of your program, and thus, no dependencies are involved.
+ * **Unit Testing tools.**
+  - [Pytest](https://docs.pytest.org/en/latest/) - Name testfiles as ```test_example.py``` and also all funtions should be defined as ```def test_example_fun():```
+  
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/test1.png" height="400" width="100%" ></a>
+  
+ * **TEST DRIVEN DEVELOPMENT:** a development process where you write tests for tasks before you even write the code to implement those tasks.
+  * Test driven development for data science is relatively new and has a lot of experimentation and breakthroughs appearing, which you can learn more about in the resources below.
+   - [Data Science TDD](https://medium.com/uk-hydrographic-office/test-driven-development-is-essential-for-good-data-science-heres-why-db7975a03a44)
+   - [Testing Your Code (general python TDD)](https://docs.python-guide.org/writing/tests/)
+   
+#### g. Logging.
+ * Logging is valuable for understanding the events that occur while running your program. 
+ **For example**, if you run your model over night and see that it's producing ridiculous results the next day, log messages can really help you understand more about the context in which this occurred. 
+ ##### Appropriate level for logging
+  - **DEBUG** - level you would use for anything that happens in the program.
+  - **ERROR** - level to record any error that occurs
+  - **INFO** - level to record all actions that are user-driven or system specific, such as regularly scheduled operations
+ 
+#### h. Code reviews.
+ * [Code reviews](https://github.com/lyst/MakingLyst/tree/master/code-reviews) benefit everyone in a team to promote best programming practices and prepare code for production. 
+ * [Code Review Best Practices](https://www.kevinlondon.com/2015/05/05/code-review-best-practices.html)
+ ##### Questions to Ask Yourself When Conducting a Code Review
+   - Is the code clean and modular?
+   - Is the code efficient?
+   - Is documentation effective?
+   - Is the code well tested?
+   - Is the logging effective?
+  
+ * Example of a good code review
+ ```
+ BAD: Make model evaluation code its own module - too repetitive.
+
+ BETTER: Make the model evaluation code its own module. This will simplify models.py to be less repetitive and focus primarily on building models.
+
+ GOOD: How about we consider making the model evaluation code its own module? This would simplify models.py to only include code for building models.
+ ```
 
 ### Part 3 – Object-Oriented Programming: Learn about this programming style and prepare to write your own Python package.
 
