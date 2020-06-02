@@ -178,5 +178,42 @@ Project documentation is essential for getting others to understand why and how 
  ```
 
 ### Part 3 – Object-Oriented Programming: Learn about this programming style and prepare to write your own Python package.
+#### Why Object-Oriented Programming?
+**Object-oriented programming** has a few benefits over procedural programming, which is the programming style you most likely first learned.
+
+* object-oriented programming allows you to create large, modular programs that can easily expand over time;
+* object-oriented programs hide the implementation from the end-user.
+Consider Python packages like [Scikit-learn](https://scikit-learn.org/stable/), [pandas](https://pandas.pydata.org/), and [NumPy](https://numpy.org/). These are all Python packages built with object-oriented programming.
+
+When you train a machine learning algorithm with Scikit-learn, you don't have to know anything about how the algorithms work or how they were coded. You can focus directly on the modeling.
+##### Objective
+Building a Python package using object-oriented programming.
+#### a) Procedural vs Object-Oriented Programming.
+**Procedural programming** is a programming paradigm, derived from structured programming, based on the concept of the procedure call. Procedures, also known as routines, subroutines, or functions, simply contain a series of computational steps to be carried out.
+
+**Object-oriented programming** is a programming paradigm based on the concept of "objects", which can contain data, in the form of fields, and code, in the form of procedures. A feature of objects is an object's procedures that can access and often modify the data fields of the object with which they are associated.
+ * **Note:** Object has a Characteristics/Attributes and Actions.
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/oop1.png" height="400" width="100%" ></a>
+
+#### b) Class, object, method, attribute.
+ * **Class** - a blueprint consisting of methods and attributes
+ * **Object** - an instance of a class. It can help to think of objects as something in the real world like a yellow pencil, a small dog etc
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/oop2.png" height="400" width="100%" ></a> 
+ * **Attribute**(Characteristics) - a descriptor or characteristic. Examples would be color, length, size, etc. These attributes can take on specific values like blue, or 3 inches.
+ * **Method** - an action that a class or object could take.
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/oop3.png" height="400" width="100%" ></a>
+ * **Encapsulation** - You can combine functions and data all into a single entity in OOP, this single entity is called a class. Encapsulation allows you to hide implementation details much like how the scikit-learn package hides the implementation of machine learning algorithms.
+
+#### What is self?
+```
+shirt_one = Shirt('red', 'S', 'short-sleeve', 15)
+short_two = Shirt('yellow', 'M', 'long-sleeve', 20)
+
+def change_price(self, new_price):
+    self.price = new_price
+
+shirt_one.change_price(12)
+```
+```Self``` tells Python where to look in the computer's memory for the shirt_one object. And then Python changes the price of the shirt_one object. When you call the change_price method, shirt_one.change_price(12), self is implicitly passed in.
 
 ### Part 4 – Introduction to Machine Learning on AWS: Learn about machine learning, generative AI, and AWS DeepComposer including how to build a custom Generative Adversarial Network.
