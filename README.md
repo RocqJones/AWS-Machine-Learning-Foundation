@@ -218,4 +218,12 @@ shirt_one.change_price(12)
 
 [Objective project here](https://)
 
+#### Inheritance.
+Inheritance is the mechanism of basing an object or class upon another object or class, retaining similar implementation. Also defined as deriving new classes from existing ones such as super class or base class and then forming them into a hierarchy of classes.
+#### List of resources for advanced Python object-oriented programming topics.
+* [**Class methods, instance methods, and static methods**](https://realpython.com/instance-class-and-static-methods-demystified/) - these are different types of methods that can be accessed at the class or object level
+* [**Class attributes vs instance attributes**](https://www.python-course.eu/python3_class_and_instance_attributes.php) - you can also define attributes at the class level or at the instance level
+* [**Multiple inheritance, mixins**](https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556) - A class can inherit from multiple parent classes
+* [**Python decorators**](https://realpython.com/primer-on-python-decorators/) - Decorators are a short-hand way for using functions inside other functions
+
 ### Part 4 – Introduction to Machine Learning on AWS: Learn about machine learning, generative AI, and AWS DeepComposer including how to build a custom Generative Adversarial Network.
