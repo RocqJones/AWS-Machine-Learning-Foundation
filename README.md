@@ -227,3 +227,5 @@ Inheritance is the mechanism of basing an object or class upon another object or
 [Objective project here](https://github.com/RocqJones/distributions_gauss_bi)
 
 ### Part 4 – Introduction to Machine Learning on AWS: Learn about machine learning, generative AI, and AWS DeepComposer including how to build a custom Generative Adversarial Network.
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-learning.png" height="300" width="100%" ></a> 
+#### 
