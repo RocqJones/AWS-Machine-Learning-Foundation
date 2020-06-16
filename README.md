@@ -228,4 +228,30 @@ Inheritance is the mechanism of basing an object or class upon another object or
 
 ### Part 4 – Introduction to Machine Learning on AWS: Learn about machine learning, generative AI, and AWS DeepComposer including how to build a custom Generative Adversarial Network.
 <a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-learning.png" height="300" width="100%" ></a> 
-#### 
+#### Why AWS?
+* AWS offers the broadest and deepest set of AI and ML services with unmatched flexibility.
+* You can accelerate your adoption of machine learning with AWS SageMaker. Models that previously took months and required specialized expertise can now be built in weeks or even days.
+* AWS offers the most comprehensive cloud offering optimized for machine learning.
+* More machine learning happens at AWS than anywhere else.
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-AI-service.jpg" height="400" width="100%" ></a>
+
+##### Amazon Code Guru.
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-code-guru.jpg" height="300" width="100%" ></a>
+##### Getting started.
+* **a. AWS DeepLens:** deep learning and computer vision.
+* **b. AWS DeepRacer and the AWS DeepRacer League:** reinforcement learning.
+* **c. AWS DeepComposer:** Generative AI.
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-deep.png" height="300" width="100%" ></a>
+
+#### Machine Learning Techniques
+##### a. Supervised Learning: 
+Models are presented wit input data and the desired results. The model will then attempt to learn rules that map the input data to the desired results.
+##### b. Unsupervised Learning: 
+Models are presented with datasets that have no labels or predefined patterns, and the model will attempt to infer the underlying structures from the dataset. Generative AI is a type of unsupervised learning.
+##### c. Reinforcement learning: 
+The model or agent will interact with a dynamic world to achieve a certain goal. The dynamic world will reward or punish the agent based on its actions. Overtime, the agent will learn to navigate the dynamic world and accomplish its goal(s) based on the rewards and punishments that it has received.
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/types-of-ml.jpg" height="300" width="100%" ></a>
+
+#### Generative AI.
+Generative AI is one of the biggest recent advancements in artificial intelligence technology because of its ability to create something new. It opens the door to an entire world of possibilities for human and computer creativity, with practical applications emerging across industries, from turning sketches into images for accelerated product development, to improving computer-aided design of complex objects. It takes two neural networks against each other to produce new and original digital works based on sample inputs.
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/generative-ai.jpg" height="300" width="100%" ></a>
