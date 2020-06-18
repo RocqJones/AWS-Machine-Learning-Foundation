@@ -233,7 +233,7 @@ Inheritance is the mechanism of basing an object or class upon another object or
 * You can accelerate your adoption of machine learning with AWS SageMaker. Models that previously took months and required specialized expertise can now be built in weeks or even days.
 * AWS offers the most comprehensive cloud offering optimized for machine learning.
 * More machine learning happens at AWS than anywhere else.
-<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-AI-service.jpg" height="400" width="100%" ></a>
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-AI-service.jpg" height="600" width="100%" ></a>
 
 ##### Amazon Code Guru.
 <a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-code-guru.jpg" height="300" width="100%" ></a>
@@ -255,3 +255,65 @@ The model or agent will interact with a dynamic world to achieve a certain goal.
 #### Generative AI.
 Generative AI is one of the biggest recent advancements in artificial intelligence technology because of its ability to create something new. It opens the door to an entire world of possibilities for human and computer creativity, with practical applications emerging across industries, from turning sketches into images for accelerated product development, to improving computer-aided design of complex objects. It takes two neural networks against each other to produce new and original digital works based on sample inputs.
 <a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/generative-ai.jpg" height="300" width="100%" ></a>
+
+#### AWS DeepComposer and Generative AI.
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-dcomposer.png" height="300" width="100%" ></a>
+AWS Deep Composer uses Generative AI, or specifically **Generative Adversarial Networks (GANs)**, to generate music. GANs pit 2 networks, a generator and a discriminator, against each other to generate new content.
+##### Adding some more light on Generator and Discriminator:
+* **The generator** plays and generates the music. 
+* **The discriminator** judges the music created by the generator and coaches the generator to improve for future iterations. 
+* So a generator, trains, practices, and tries to generate music, and then the discriminator coaches them to produced more polished music.
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-mle-orchestra-metaphor.jpg" height="300" width="100%" ></a>
+
+##### AWS DeepComposer Workflow.
+- Use the AWS DeepComposer keyboard or play the virtual keyboard in the AWS DeepComposer console to input a melody.
+- Use a model in the AWS DeepComposer console to generate an original musical composition. You can choose from jazz, rock, pop, symphony or Jonathan Coulton pre-trained models or you can also build your own custom genre model in Amazon SageMaker.
+- Publish your tracks to SoundCloud or export MIDI files to your favorite Digital Audio Workstation (like Garage Band) and get even more creative.
+#### Let's explore DeepComposer’s music studio, and we’ll end by generating a composition with a 4 part accompaniment.
+1. To get to the main AWS DeepComposer console, navigate to AWS DeepComposer. Make sure you are in the US East-1 region.
+Once there, click on Get started
+2. In the left hand menu, select Music studio to navigate to the DeepComposer music studio.
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/1studio.png" height="300" width="100%" ></a>
+3. To generate music you can use a virtual keyboard or the physical AWS DeepComposer keyboard. For this lab, we’ll use the virtual keyboard.
+4. To view sample melody options, select the drop down arrow next to Input, Next, choose a model to apply to the melody by clicking Select model
+From the sample models and then click Select model, Next, select Generate composition. The model will take the 1 track melody and create a multitrack composition (in this case, it created 4 tracks)
+5. Click play to hear the output.
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/2studio.png" height="300" width="100%" ></a>
+
+#### Model Training with AWS DeepComposer.
+Each iteration of the training cycle is called an **epoch**. The model is trained for thousands of epochs.
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/GANS1.png" height="300" width="100%" ></a>
+##### Loss Functions.
+The **measure of an error, given a set of weights**.
+* In machine learning, the goal of iterating and completing epochs is to improve the output or prediction of the model.
+  - Any **output** that **deviates from the ground truth** is referred to as an **error**. 
+  - **Weights** represent how important an associated feature is to **determining the accuracy of a prediction**, and loss functions are used to update the weights after every iteration. 
+  - As the weights update, the model improves making less and less errors. 
+* Convergence happens once the loss functions stabilize.
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/GANS2.png" height="300" width="100%" ></a>
+**NOTE:** GAN loss functions have many fluctuations early on due to the “adversarial” nature of the generator and discriminator.
+
+##### AWS DeepComposer Under the Hood.
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/under1.png" height="300" width="100%" ></a>
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/under2.png" height="300" width="100%" ></a>
+
+#### Training Architecture.
+1. User launch a training job from the AWS DeepComposer console by selecting hyperparameters and data set filtering tags.
+2. The backend consists of an API Layer (API gateway and lambda) write request to DynamoDB.
+3. Triggers a lambda function that starts the training workflow.
+4. It then uses AWS Step Funcitons to launch the training job on Amazon SageMaker.
+5. Status is continually monitored and updated to DynamoDB.
+6. The console continues to poll the backend for the status of the training job and update the results live so users can see how the model is learning.
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-mle-train-arch.png" height="600" width="100%" ></a>
+
+##### How to measure the quality of the music we’re generating:
+* We can monitor the loss function to make sure the model is converging.
+* We can check the **similarity index** to see how close is the model to mimicking the style of the data. When the graph of the similarity index smoothes out and becomes less spikey, we can be confident that the model is converging.
+* We can listen to the music created by the generated model to see if it's doing a good job. The musical quality of the model should improve as the number of training epochs increases.
+
+##### Challenges with GANs
+* Clean datasets are hard to obtain.
+* Not all melodies sound good in all genres.
+* Convergence in GAN is tricky – it can be fleeting rather than being a stable state.
+* Complexity in defining meaningful quantitive metrics to measure the quality of music created.
+
