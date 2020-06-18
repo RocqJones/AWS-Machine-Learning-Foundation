@@ -233,7 +233,7 @@ Inheritance is the mechanism of basing an object or class upon another object or
 * You can accelerate your adoption of machine learning with AWS SageMaker. Models that previously took months and required specialized expertise can now be built in weeks or even days.
 * AWS offers the most comprehensive cloud offering optimized for machine learning.
 * More machine learning happens at AWS than anywhere else.
-<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-AI-service.jpg" height="400" width="100%" ></a>
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-AI-service.jpg" height="600" width="100%" ></a>
 
 ##### Amazon Code Guru.
 <a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-code-guru.jpg" height="300" width="100%" ></a>
