@@ -369,3 +369,14 @@ The goal of the discriminator is to provide feedback to the generator about how 
  1. Discriminators are also referred to as critics because they evaluate the input from the generator and provide feedback.
  2. discriminator's role is solely focused on determining if the input is realistic.
  3. Input noise is important because it ensures that that the generated output is varied.
+
+#### Training Methodology.
+* Training over more epochs will take longer but can lead to a better sounding musical output
+* Model training is a trade-off between the number of epochs (i.e. time) and the quality of sample output.
+##### Learning Rate.
+The learning rate controls how rapidly the weights and biases of each network are updated during training. A higher learning rate might allow the network to explore a wider set of model weights, but might pass over more optimal weights.
+
+##### Update ratio.
+A ratio of the number of times the discriminator is updated per generator training epoch. Updating the discriminator multiple times per generator training epoch is useful because it can improve the discriminators accuracy. Changing this ratio might allow the generator to learn more quickly early-on, but will increase the overall training time.
+
+* **Hyperparameters:** A parameter whose value is set before the training process begins.
