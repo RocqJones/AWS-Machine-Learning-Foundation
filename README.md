@@ -260,7 +260,7 @@ Generative AI is one of the biggest recent advancements in artificial intelligen
 <a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-dcomposer.png" height="300" width="100%" ></a>
 AWS Deep Composer uses Generative AI, or specifically **Generative Adversarial Networks (GANs)**, to generate music. GANs pit 2 networks, a generator and a discriminator, against each other to generate new content.
 ##### Adding some more light on Generator and Discriminator:
-* **The generator** plays and generates the music. 
+* **The generator* plays and generates the music. 
 * **The discriminator** judges the music created by the generator and coaches the generator to improve for future iterations. 
 * So a generator, trains, practices, and tries to generate music, and then the discriminator coaches them to produced more polished music.
 <a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-mle-orchestra-metaphor.jpg" height="300" width="100%" ></a>
