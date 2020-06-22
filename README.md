@@ -328,7 +328,8 @@ Generative AI has been described as one of the most promising advances in AI in 
 GANs, a generative AI technique, pit 2 networks against each other to generate new content. The algorithm consists of two competing networks: a **generator** and a **discriminator**.
 * **A generator** is a convolutional neural network (CNN) that learns to create new data resembling the source data it was trained on.
 * **A discriminator** is another convolutional neural network (CNN) that is trained to differentiate between real and synthetic data.
- - **The generator and the discriminator are trained in alternating cycles such that the generator learns to produce more and more realistic data while the discriminator iteratively gets better at learning to differentiate real data from the newly created data.**
+
+**The generator and the discriminator are trained in alternating cycles such that the generator learns to produce more and more realistic data while the discriminator iteratively gets better at learning to differentiate real data from the newly created data.**
 
 ##### A scheme Scheme representing AWS DeepComposer GAN
 <a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-deepcomoserr-gan-schema.png" height="300" width="100%" ></a>
