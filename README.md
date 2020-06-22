@@ -1,4 +1,4 @@
-# AWS-Machine-Learning-Foundation (Udacity Scholarship)
+# AWS-Machine-Learning-Foundation (From my Udacity Scholarship)
 
 An introduction to machine learning concepts.
 * practical experience with software engineering for AWS machine learning, as well as deep learning.
@@ -317,3 +317,18 @@ The **measure of an error, given a set of weights**.
 * Convergence in GAN is tricky – it can be fleeting rather than being a stable state.
 * Complexity in defining meaningful quantitive metrics to measure the quality of music created.
 
+### Generative AI
+Generative AI has been described as one of the most promising advances in AI in the past decade by the MIT Technology Review.
+* Generative AI opens the door to an entire world of creative possibilities with practical applications that turning sketches into images for accelerated product development, to improving computer-aided design of complex objects.
+ - For example, Glidewell Dental is training a generative adversarial network adept at constructing detailed 3D models from images. One network generates images and the second inspects those images. This results in an image that has even more anatomical detail than the original teeth they are replacing.
+* Generative AI enables computers to learn the underlying pattern associated with a provided input (image, music, or text), and then they can use that input to generate new content. 
+ - Examples of Generative AI techniques include Generative Adversarial Networks (GANs), Variational Autoencoders, and Transformers.
+
+#### What are GANs?
+GANs, a generative AI technique, pit 2 networks against each other to generate new content. The algorithm consists of two competing networks: a **generator** and a **discriminator**.
+* **A generator** is a convolutional neural network (CNN) that learns to create new data resembling the source data it was trained on.
+* **A discriminator** is another convolutional neural network (CNN) that is trained to differentiate between real and synthetic data.
+ - **The generator and the discriminator are trained in alternating cycles such that the generator learns to produce more and more realistic data while the discriminator iteratively gets better at learning to differentiate real data from the newly created data.**
+
+##### A scheme Scheme representing AWS DeepComposer GAN
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-deepcomoserr-gan-schema.png" height="300" width="100%" ></a>
