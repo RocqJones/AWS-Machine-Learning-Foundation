@@ -245,7 +245,7 @@ Inheritance is the mechanism of basing an object or class upon another object or
 
 #### Machine Learning Techniques
 ##### a. Supervised Learning: 
-Models are presented wit input data and the desired results. The model will then attempt to learn rules that map the input data to the desired results.
+Models are presented with input data and the desired results. The model will then attempt to learn rules that map the input data to the desired results.
 ##### b. Unsupervised Learning: 
 Models are presented with datasets that have no labels or predefined patterns, and the model will attempt to infer the underlying structures from the dataset. Generative AI is a type of unsupervised learning.
 ##### c. Reinforcement learning: 
@@ -260,7 +260,7 @@ Generative AI is one of the biggest recent advancements in artificial intelligen
 <a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-dcomposer.png" height="300" width="100%" ></a>
 AWS Deep Composer uses Generative AI, or specifically **Generative Adversarial Networks (GANs)**, to generate music. GANs pit 2 networks, a generator and a discriminator, against each other to generate new content.
 ##### Adding some more light on Generator and Discriminator:
-* **The generator* plays and generates the music. 
+* **The generator** plays and generates the music. 
 * **The discriminator** judges the music created by the generator and coaches the generator to improve for future iterations. 
 * So a generator, trains, practices, and tries to generate music, and then the discriminator coaches them to produced more polished music.
 <a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-mle-orchestra-metaphor.jpg" height="300" width="100%" ></a>
@@ -288,20 +288,20 @@ The **measure of an error, given a set of weights**.
 * In machine learning, the goal of iterating and completing epochs is to improve the output or prediction of the model.
   - Any **output** that **deviates from the ground truth** is referred to as an **error**. 
   - **Weights** represent how important an associated feature is to **determining the accuracy of a prediction**, and loss functions are used to update the weights after every iteration. 
-  - As the weights update, the model improves making less and less errors. 
-* Convergence happens once the loss functions stabilize.
+  - As the weights updates, the model improves making less and less errors. 
+* **Convergence** happens once the loss functions stabilize.
 <a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/GANS2.png" height="300" width="100%" ></a>
-**NOTE:** GAN loss functions have many fluctuations early on due to the “adversarial” nature of the generator and discriminator.
+**NOTE:** GAN loss functions have many fluctuations early on due to the “adversarial nature" of the generator and discriminator.
 
 ##### AWS DeepComposer Under the Hood.
-<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/under1.png" height="300" width="100%" ></a>
-<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/under2.png" height="300" width="100%" ></a>
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/under1.png" height="400" width="100%" ></a>
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/under2.png" height="400" width="100%" ></a>
 
 #### Training Architecture.
 1. User launch a training job from the AWS DeepComposer console by selecting hyperparameters and data set filtering tags.
 2. The backend consists of an API Layer (API gateway and lambda) write request to DynamoDB.
 3. Triggers a lambda function that starts the training workflow.
-4. It then uses AWS Step Funcitons to launch the training job on Amazon SageMaker.
+4. It then uses AWS Step Functions to launch the training job on Amazon SageMaker.
 5. Status is continually monitored and updated to DynamoDB.
 6. The console continues to poll the backend for the status of the training job and update the results live so users can see how the model is learning.
 <a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/aws-mle-train-arch.png" height="600" width="100%" ></a>
@@ -325,7 +325,7 @@ Generative AI has been described as one of the most promising advances in AI in 
  - Examples of Generative AI techniques include Generative Adversarial Networks (GANs), Variational Autoencoders, and Transformers.
 
 #### What are GANs (Generative Adversarial Networks)?
-GANs, a generative AI technique, pit 2 networks against each other to generate new content. The algorithm consists of two competing networks: a **generator** and a **discriminator**.
+GANs, a generative AI technique which has pit 2 networks against each other to generate new content. The algorithm consists of two competing networks: a **generator** and a **discriminator**.
 * **A generator** is a convolutional neural network (CNN) that learns to create new data resembling the source data it was trained on.
 * **A discriminator** is another convolutional neural network (CNN) that is trained to differentiate between real and synthetic data.
 
@@ -367,7 +367,7 @@ The goal of the discriminator is to provide feedback to the generator about how 
 
 **TAKES:**
  1. Discriminators are also referred to as critics because they evaluate the input from the generator and provide feedback.
- 2. discriminator's role is solely focused on determining if the input is realistic.
+ 2. Discriminator's role is solely focused on determining if the input is realistic.
  3. Input noise is important because it ensures that that the generated output is varied.
 
 #### Training Methodology.
@@ -395,7 +395,7 @@ The final process for music generation then is as follows:
 * Transform the series of piano rolls back into a common music format (MIDI), assigning an instrument for each track.
 
 #### Why Do We Need to Prepare Data?
-Data often comes from many places (like a website, IoT sensors, a hard drive, or physical paper) and it’s usually not clean or in the same format. Before you can better understand your data, you need to make sure it’s in the right format to be analyzed. Thankfully, there are library packages that can help! One such library is called NumPy, which was imported into our notebook.
+Data often comes from many places (like a website, IoT sensors, a hard drive, or physical paper) and it’s usually not clean or in the same format. Before you can better understand your data, you need to make sure it’s in the right format to be analyzed. Thankfully, there are library packages that can help like "NumPy", which can be imported into a notebook.
 
 TAKES:
 * **[Tensorflow Framework](https://www.tensorflow.org/)**
