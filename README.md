@@ -19,7 +19,7 @@ An introduction to machine learning concepts.
 * Take up less space in memory/storage
 
 * **MODULAR:** logically broken up into functions and modules. Also an important characteristic of production quality code that makes your code more organized, efficient, and reusable.<br>
-<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/modularcode.png" height="300" width="100%" ></a>
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/modularcode.png" height="400" width="100%" ></a>
 
 * **MODULE:** a file. Modules allow code to be reused by encapsulating them into files that can be imported into other files.
 
@@ -63,8 +63,8 @@ Project documentation is essential for getting others to understand why and how 
   - Create and switch to new branch called demographic from develop branch
   ```$ git checkout -b demographic```
   
-  - Work on this new feature and commit as you go
-  ```$ git commit -m 'added gender recommendations'```
+  - Work on this new feature and commit as you go <br>
+  ```$ git commit -m 'added gender recommendations'``` <br>
   ```$ git commit -m 'added location specific recommendations'```
 * However, in the middle of your work, you need to work on another feature. So you commit your changes on this demographic branch, and switch back to the develop branch.
   - Commit changes before switching
@@ -143,12 +143,12 @@ Project documentation is essential for getting others to understand why and how 
  * **Unit Testing tools.**
   - [Pytest](https://docs.pytest.org/en/latest/) - Name testfiles as ```test_example.py``` and also all funtions should be defined as ```def test_example_fun():```
   
-<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/test1.png" height="400" width="100%" ></a>
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/test1.png" height="600" width="100%" ></a>
   
  * **TEST DRIVEN DEVELOPMENT:** a development process where you write tests for tasks before you even write the code to implement those tasks.
   * Test driven development for data science is relatively new and has a lot of experimentation and breakthroughs appearing, which you can learn more about in the resources below.
-   - [Data Science TDD](https://medium.com/uk-hydrographic-office/test-driven-development-is-essential-for-good-data-science-heres-why-db7975a03a44)
-   - [Testing Your Code (general python TDD)](https://docs.python-guide.org/writing/tests/)
+    - [Data Science TDD](https://medium.com/uk-hydrographic-office/test-driven-development-is-essential-for-good-data-science-heres-why-db7975a03a44)
+    - [Testing Your Code (general python TDD)](https://docs.python-guide.org/writing/tests/)
    
 #### g. Logging.
  * Logging is valuable for understanding the events that occur while running your program. 
