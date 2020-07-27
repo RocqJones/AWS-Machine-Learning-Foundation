@@ -273,12 +273,12 @@ AWS Deep Composer uses Generative AI, or specifically **Generative Adversarial N
 1. To get to the main AWS DeepComposer console, navigate to AWS DeepComposer. Make sure you are in the US East-1 region.
 Once there, click on Get started
 2. In the left hand menu, select Music studio to navigate to the DeepComposer music studio.
-<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/1studio.png" height="300" width="100%" ></a>
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/1studio.png" height="500" width="100%" ></a>
 3. To generate music you can use a virtual keyboard or the physical AWS DeepComposer keyboard. For this lab, we’ll use the virtual keyboard.
 4. To view sample melody options, select the drop down arrow next to Input, Next, choose a model to apply to the melody by clicking Select model
 From the sample models and then click Select model, Next, select Generate composition. The model will take the 1 track melody and create a multitrack composition (in this case, it created 4 tracks)
 5. Click play to hear the output.
-<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/2studio.png" height="300" width="100%" ></a>
+<a href="url"><img src="https://github.com/RocqJones/AWS-Machine-Learning-Foundation/blob/master/imgs/2studio.png" height="500" width="100%" ></a>
 
 #### Model Training with AWS DeepComposer.
 Each iteration of the training cycle is called an **epoch**. The model is trained for thousands of epochs.
