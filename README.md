@@ -1,7 +1,7 @@
 # AWS-Machine-Learning-Foundation (From my Udacity Scholarship)
 
 An introduction to machine learning concepts.
-* practical experience with software engineering for AWS machine learning, as well as deep learning.
+* Practical experience with software engineering for AWS machine learning, as well as deep learning.
 * **AWS(Amazon Web Services)** is a secure cloud services platform, offering compute power, database storage, content delivery and other functionality to help businesses scale and grow.
 * **Machine Learning** is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed.
 
